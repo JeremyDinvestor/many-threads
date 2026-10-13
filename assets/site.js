@@ -16,7 +16,11 @@
     PAGE = B.dataset.page,
     CID = B.dataset.id;
   // ===== EDIT THESE =====
-  var CFG = { wa: "", pay: "", email: "hello@manythreads.example" }; // wa: WhatsApp number with country code, digits only (e.g. 2348012345678). pay: optional online payment link.
+  var CFG = {
+    wa: "2348104419375",
+    pay: "",
+    email: "hello@manythreads.example",
+  }; // wa: WhatsApp number with country code, digits only (e.g. 2348012345678). pay: optional online payment link.
   var SOC = [
     ["Instagram", "https://instagram.com/"],
     ["TikTok", "https://tiktok.com/"],
@@ -24,7 +28,7 @@
     ["X", "https://x.com/"],
     ["Pinterest", "https://pinterest.com/"],
     ["YouTube", "https://youtube.com/"],
-    ["WhatsApp", "https://wa.me/"],
+    ["WhatsApp", "https://wa.me/2348104419375"],
   ];
 
   var LINKS = {
@@ -1371,7 +1375,10 @@
     if (f.elements.nt.value.trim())
       m.push(t("notes") + ": " + f.elements.nt.value.trim());
     window.open(
-      "https://wa.me/" + CFG.wa + "?text=" + encodeURIComponent(m.join("\n")),
+      "https://wa.me/2348104419375" +
+        CFG.wa +
+        "?text=" +
+        encodeURIComponent(m.join("\n")),
       "_blank",
     );
   }
@@ -1430,7 +1437,10 @@
         v("ms"),
       ];
       window.open(
-        "https://wa.me/" + CFG.wa + "?text=" + encodeURIComponent(m.join("\n")),
+        "https://wa.me/2348104419375" +
+          CFG.wa +
+          "?text=" +
+          encodeURIComponent(m.join("\n")),
         "_blank",
       );
       document.getElementById("ok").textContent = t("sent");
